@@ -106,8 +106,8 @@ int max_env(T_liste l){
     if(l->next==NULL) return res;    //s'il n'y a pas d'autre maillon on renvoie la valeur du premier
     else
         return max(res,max_env(l->next));        //sinon on parcours récursivement la liste en gardant le plus grand élément entre la valeur du maillon actuel et celle du prochain maillon
-    }
 }
+
 
 
 int max_ter_aux(T_liste l, int aux){        //fonction auxiliaire de max_ter, l'argument aux doit être l->value
